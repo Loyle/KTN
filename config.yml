@@ -1,0 +1,188 @@
+KTN:
+  # PLUGIN KTN ------- CONFIG -------
+  #
+  # ATTENTION A CHAQUE FIN DE PARTIE, SUPPRIMER LES MAP DE JEUX (world et world_nether) POUR LES RE-GENERER
+  #
+  MinPlayers: 2
+  MaxPlayers: 20
+
+  StartCountDown: 10
+
+  # Lobby = monde d'arriver
+  # Map = monde de jeu
+  Lobby: 
+    WorldName: lobby
+    Spawn:
+      X: 0
+      Y: 200
+      Z: 0
+      YAW: 0
+      PITCH: 0
+
+  # Mettre le world par default du serveur (Tres souvent c'est: world)
+  Map:
+    WorldName: world
+    Size: 2000
+
+  # Durant la partie:
+  # Si un joueur meurt
+  AllowReconnect: true
+  KickOnDeath:
+    Kick: false
+    After: 30
+
+  # ScoreBoard
+  ScoreBoardTitle: "Custom name"
+
+  # Potions
+  PotionLvlDeux: false
+
+  # Divers
+  DoLightCycle:
+    Do: false
+    Time: 6000
+  Weather: false
+  NaturalRegeneration: false
+
+  EpisodeTime: 20
+
+  # Episode ou le murs commence à retrecire + taille final
+  WallReduce:
+    Episode: 6
+    Size: 200
+  # En minutes (= temps pour reduire)
+    TimeForReduce: 60
+  
+  # Gestion des craft en diams
+  DiamondCraft:
+    Helmet: false
+    ChestPlate: false
+    Leggings: false
+    Boots: false
+    Sword: false
+
+
+  # Gestion des teams
+  # Pour desactiver les teams, mettre false ci-dessous
+  PlayWithTeams: true
+  Teams:
+    PlayersInTeam: 2
+    Numbers: 8
+  TeamsList:
+    0:
+      Name: RED
+      Color: "&c"
+    1:
+      Name: BLACK
+      Color: "&0"
+    2:
+      Name: YELLOW
+      Color: "&e"
+    3:
+      Name: BLUE
+      Color: "&9"
+    4:
+      Name: GREEN
+      Color: "&a"
+    5:
+      Name: PURPLE
+      Color: "&d"
+    6:
+      Name: AQUA
+      Color: "&b"
+    7:
+      Name: GRAY
+      Color: "&7"
+
+
+  # Modes manager
+  TaupeMode:
+    Activated: false
+    TaupePerTeam: 1
+    NumberTaupeTeams: 1
+    # Annonce des taupes a l episode :
+    TaupeSelect: 3
+    # Si PreSelect est on, les taupe seront choisit en debut de partie (puis annoncer a l episode configure)
+    PreSelect: true
+    # AutoReveal, mettre 0 pour desactiver (correspond a l episode)
+    AutoReveal: 6
+  
+  SwitchMode:
+    Activated: false
+
+    # Episode début et fin des switch
+    StartEpisode: 1
+    EndEpisode: 5
+    # Temps dans l'épisode ou le switch a lieu en min
+    SwitchTime: 10
+
+
+
+
+
+  # Spawns list (Inutile d'y toucher si vous jouer dans une map de 2000 blocks)
+  # Si vous activer le random spawns, les spawn seront géré automatiquement, mais des joueurs pourrai spawn très proche
+  RandomSpawns: true
+  
+  # Meme si vous êtes moins de 20, les spawns sont placés intelligement de façon à remplir correctement la map
+  Spawns:
+    1:
+      x: -500
+      z: 500
+    2:
+      x: -500
+      z: -500
+    3:
+      x: 500
+      z: -500
+    4:
+      x: 500
+      z: 500
+    5:
+      x: -900
+      z: 900
+    6:
+      x: -900
+      z: -900
+    7:
+      x: 900
+      z: -900
+    8:
+      x: 900
+      z: 900
+    9:
+      x: -500
+      z: 250
+    10:
+      x: -250
+      z: -500
+    11:
+      x: 500
+      z: -250
+    12:
+      x: 250
+      z: 500
+    13:
+      x: -500
+      z: -250
+    14:
+      x: 250
+      z: -500
+    15:
+      x: 500
+      z: 250
+    16:
+      x: -250
+      z: 500
+    17:
+      x: -100
+      z: 100
+    18:
+      x: -100
+      z: -100
+    19:
+      x: 100
+      z: -100
+    20:
+      x: 100
+      z: 100

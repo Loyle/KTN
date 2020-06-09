@@ -1,0 +1,9 @@
+name: KTN
+main: fr.loyle.ktn.KTN
+version: 2.0.1
+description: KTN (Kill The Noobs)
+author: Loyle
+commands:
+  ktn:
+    description: Informations
+    usage: /ktn
